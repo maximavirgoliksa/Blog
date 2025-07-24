@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nahuel Alexis Robledo - Portafolio</title>
+  <style>
+    :root {
+      --bg-light: #f5f5f5;
+      --bg-dark: #1e1e1e;
+      --text-light: #1e1e1e;
+      --text-dark: #f5f5f5;
+      --primary: #007bff;
+    }body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+nav button {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+section {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+a {
+  color: var(--primary);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nahuel Alexis Robledo</h1>
+    <p>Desarrollador independiente y entusiasta de la tecnología</p>
+    <nav>
+      <button onclick="toggleTheme()">Cambiar tema</button>
+    </nav>
+  </header>  <section>
+    <h2>Sobre mí</h2>
+    <p>
+      Soy un apasionado de la programación y la tecnología. Trabajo en proyectos de automatización, bots y soluciones personalizadas con herramientas como Python, APIs y plataformas en la nube.
+    </p>
+  </section>  <section>
+    <h2>Proyectos</h2>
+    <ul>
+      <li>Bot de automatización para Stripe y pagos</li>
+      <li>Verificador de tarjetas con integración de CAPTCHA</li>
+      <li>Scripts para agregar métodos de pago en e-commerce</li>
+    </ul>
+  </section>  <section>
+    <h2>Contacto</h2>
+    <p>Email: <a href="mailto:nahuelalexisrobledo@gmail.com">nahuelalexisrobledo@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com" target="_blank">Mi perfil de LinkedIn</a></p>
+  </section>  <footer>
+    &copy; 2025 Nahuel Alexis Robledo. Todos los derechos reservados.
+  </footer>  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script></body>
+</html>
