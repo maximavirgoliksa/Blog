@@ -1,15 +1,100 @@
-<section id="proyectos">
-  <h2>🧪 Proyectos Destacados</h2>
-  <div class="proyecto">
-    <h3>KeyMaster – Sistema de licencias</h3>
-    <p>Back + Frontend | Python + React</p>
-    <a href="./proyectos/keymaster/" target="_blank">Ver demo</a>
-    <a href="https://github.com/tuusuario/keymaster">Ver código</a>
-  </div>
-  <div class="proyecto">
-    <h3>CreepyStoryGen – Generador de historias</h3>
-    <p>Frontend interactivo | Vanilla JS</p>
-    <a href="./proyectos/creepystorygen/" target="_blank">Ver demo</a>
-    <a href="https://github.com/tuusuario/creepystorygen">Ver código</a>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Menú e Iconos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos para el menú principal */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background-color: #575757;
+            color: white;
+        }
+        .menu-item {
+            position: relative;
+            display: inline-block;
+        }
+        .submenu {
+            display: none; /* Ocultar submenú por defecto */
+            position: absolute;
+            background-color: #333;
+            top: 100%; /* Debajo del menú principal */
+            left: 0;
+            z-index: 1;
+            width: auto;
+        }
+        .submenu a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+        .submenu a:hover {
+            background-color: #575757;
+        }
+        .submenu a .icon {
+            margin-right: 8px;
+        }
+
+        /* Consultas de medios para pantallas pequeñas (móviles) */
+        @media (max-width: 600px) {
+            nav a, .submenu a {
+                text-align: left;
+                padding: 10px;
+            }
+            .menu-item {
+                display: block;
+                width: 100%;
+            }
+            .submenu {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="menu-item">
+        <a href="javascript:void(0)" onclick="toggleSubmenu()">Proyectos</a>
+        <div class="submenu" id="submenu">
+            <a href="link_a_tus_proyectos_html"><i class="fab fa-html5 icon"></i> HTML</a>
+            <a href="link_a_tus_proyectos_css"><i class="fab fa-css3-alt icon"></i> CSS</a>
+            <a href="link_a_tus_proyectos_js"><i class="fab fa-js icon"></i> JavaScript</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    function toggleSubmenu() {
+        var submenu = document.getElementById("submenu");
+        if (submenu.style.display === "block") {
+            submenu.style.display = "none";
+        } else {
+            submenu.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
