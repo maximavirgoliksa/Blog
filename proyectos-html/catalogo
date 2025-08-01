@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos de HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            color: #FF8C00; /* Color naranja para HTML */
+            text-align: center;
+        }
+        .project-list {
+            list-style: none;
+            padding: 0;
+        }
+        .project-list li {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s;
+        }
+        .project-list li:hover {
+            transform: translateY(-5px);
+            background-color: #2a2a2a;
+        }
+        .project-list a {
+            color: #FFD700; /* Color amarillo para los enlaces */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-list p {
+            font-size: 0.9em;
+            color: #ccc;
+        }
+        .back-link {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+            color: #00FF00;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Mis Proyectos de HTML</h1>
+    <ul class="project-list">
+        <li>
+            <a href="URL_A_TU_PRIMER_PROYECTO_HTML">Proyecto 1: Mi Página de Presentación</a>
+            <p>Descripción breve de tu primer proyecto. Ejemplo: "Una página web básica con mi información personal y un formulario de contacto."</p>
+        </li>
+        <li>
+            <a href="URL_A_TU_SEGUNDO_PROYECTO_HTML">Proyecto 2: Landing Page de Producto</a>
+            <p>Descripción breve de tu segundo proyecto. Ejemplo: "Una página de aterrizaje para un producto ficticio, con secciones de características y testimonios."</p>
+        </li>
+        </ul>
+    <a href="index.html" class="back-link">← Volver al menú principal</a>
+</div>
+
+</body>
+</html>
